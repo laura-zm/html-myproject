@@ -1,0 +1,978 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" type="text/css" href="project_css.css">
+  <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkNXufNtE9yYX_3KhZu4S0_To_EF2mVjXgRA&s" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Taylor Verse - Homepage</title>
+</head>
+<body class= "home-page">
+
+<header class="main-header">
+  <div class="main-header-logo-wrapper">
+    <img class="main-header-logo"
+    src="Assets/thetaylorverse_logo.png"
+    alt="Taylor Swift Logo"
+    draggable="false">
+  </div>
+</header>
+
+<section class="Homepage">
+<div class="menu">
+<ul>
+  <li class="dropdown">
+    <a href="index.html" class="dropdown-toggle">Home</a>
+    <ul class="dropdown-menu">
+      <li><a href="#new-album"></i>New Album</a></li>
+      <li><a href="#latest-news"></i>Latest News</a></li>
+      <li><a href="#merch"></i>Merch</a></li>
+    </ul>
+  </li>
+  <li><a href="project_wiki.html">Wiki</a></li>
+  <li><a href="project_contact.html">Contact</a></li>
+  <li><a href="project_gallery.html">The Eras</a></li>
+</ul>
+</div>
+</section>
+
+<script>
+  // Mobile dropdown toggle
+document.addEventListener('DOMContentLoaded', function() {
+  if (window.innerWidth <= 600) {
+    const dropdownToggle = document.querySelector('.dropdown-toggle');
+    const dropdown = document.querySelector('.dropdown');
+    
+    if (dropdownToggle && dropdown) {
+      dropdownToggle.addEventListener('click', function(e) {
+        e.preventDefault();
+        dropdown.classList.toggle('active');
+      });
+    }
+  }
+});
+</script>
+
+
+<div class="eras-slider">
+  <button class="era-btn active">
+    <img src="https://assets.dmi.umgapps.com/assets/taylor-swift/tour-site/landing-images/1.jpg">
+  </button>
+  <button class="era-btn">
+    <img src="https://assets.dmi.umgapps.com/assets/taylor-swift/landing-images/1678544276252-2-v2.jpg">
+  </button>
+  <button class="era-btn">
+    <img src="https://assets.dmi.umgapps.com/assets/taylor-swift/tour-site/landing-images/3.jpg">
+  </button>
+  <button class="era-btn">
+    <img src="https://assets.dmi.umgapps.com/assets/taylor-swift/tour-site/landing-images/4.jpg">
+  </button>
+  <button class="era-btn">
+    <img src="https://assets.dmi.umgapps.com/assets/taylor-swift/tour-site/landing-images/5.jpg">
+  </button>
+  <button class="era-btn">
+    <img src="https://assets.dmi.umgapps.com/assets/taylor-swift/tour-site/landing-images/6.jpg">
+  </button>
+  <button class="era-btn">
+    <img src="https://assets.dmi.umgapps.com/assets/taylor-swift/tour-site/landing-images/7.jpg">
+  </button>
+  <button class="era-btn">
+    <img src="https://assets.dmi.umgapps.com/assets/taylor-swift/tour-site/landing-images/8.jpg">
+  </button>
+  <button class="era-btn">
+    <img src="https://assets.dmi.umgapps.com/assets/taylor-swift/landing-images/1678544281122-9-v2.jpg">
+  </button>
+  <button class="era-btn">
+    <img src="https://assets.dmi.umgapps.com/assets/ts/ttpd/1715195830303-new-midnights.jpg">
+  </button>
+  <button class="era-btn">
+    <img src="https://assets.dmi.umgapps.com/assets/ts/ttpd/1715168073245-ttpd.jpg">
+  </button>
+</div>
+
+<script>
+  const buttons = document.querySelectorAll(".era-btn");
+
+  buttons.forEach(btn => {
+    btn.addEventListener("click", () => {
+      buttons.forEach(b => b.classList.remove("active"));
+      btn.classList.add("active");
+    });
+  });
+</script>
+
+<h1 class="homepage_title">WELCOME TO<br>THE TAYLORVERSE</h1>
+
+<p class="homepage_paragraph">The perfect place to discover more about the American singer and songwriter Taylor Swift and her musical journey.</p>
+
+<!-- Album Feature Section -->
+<section class="album-feature-section" id="new-album">
+  <div class="album-feature-container">
+    <div class="album-feature-header">
+      <div class="album-badge">NEW ALBUM OUT NOW</div>
+      <h2 class="album-section-title">THE LIFE OF A SHOWGIRL</h2>
+      <p class="album-section-subtitle">Stream the new album everywhere now</p>
+    </div>
+    
+    <div class="album-spotify-embed">
+      <iframe 
+        data-testid="embed-iframe" 
+        style="border-radius:12px" 
+        src="https://open.spotify.com/embed/album/4a6NzYL1YHRUgx9e3YZI6I?utm_source=generator&theme=0" 
+        width="100%" 
+        height="352" 
+        frameBorder="0" 
+        allowfullscreen="" 
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+        loading="lazy">
+      </iframe>
+    </div>
+    
+    <div class="album-actions">
+      <a href="https://open.spotify.com/album/4a6NzYL1YHRUgx9e3YZI6I" target="_blank" class="album-action-btn spotify">
+        <i class="fa-brands fa-spotify"></i>
+        <span>Spotify</span>
+      </a>
+      <a href="https://music.apple.com/us/album/the-life-of-a-showgirl/1833328839" target="_blank" class="album-action-btn apple">
+        <i class="fa-brands fa-apple"></i>
+        <span>Apple Music</span>
+      </a>
+      <a href="https://music.amazon.com/albums/B0FT4QGN9C" target="_blank" class="album-action-btn amazon">
+        <i class="fa-brands fa-amazon"></i>
+        <span>Amazon Music</span>
+      </a>
+      <a href="https://taylor.lnk.to/TSTheLifeofaShowgirl" target="_blank" class="album-action-btn more">
+        <i class="fas fa-ellipsis-h"></i>
+        <span>More</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+
+<section class="news_homepage_title" id="latest-news">
+  <h2 class="news-heading">NEWS</h2>
+  <div class="news-divider"></div>
+
+<p class="news_paragraph">Find here the latest announcements about Taylor Swift's musical work, from new projets to noteworthy updates across her career.</p>
+
+<div class="news-grid">
+
+<!-- TOP LEFT: Disney -->
+<div class="news-cell disney-cell">
+  <div class="news-feature">
+
+    <a href="https://www.disneyplus.com/en-fr/browse/entity-a948a435-fdcc-4cbe-b699-85dd62fec60b"
+       target="_blank" rel="noopener noreferrer">
+      <div class="news-feature-media">
+        <img src="Assets/Disney_Documentary.png" alt="Disney+ Documentary">
+        <div class="news-feature-overlay">
+          <i class="fas fa-play-circle"></i>
+        </div>
+      </div>
+    </a>
+
+    <a href="https://www.youtube.com/watch?v=IppMykw4fT4" 
+       target="_blank" 
+       rel="noopener noreferrer" 
+       class="cta-button">
+      Watch the Announce Trailer
+    </a>
+
+    <h3 class="carousel-title">"The End of an Era" Documentary</h3>
+    <p class="news-feature-text">
+      "The End of an Era" is a six-episode behind-the-scenes docuseries event
+      chronicling the development, impact, and inner workings that created
+      the phenomenon that was Taylor Swift | The Eras Tour.
+    </p>
+
+  </div>
+</div>
+
+<!-- TOP RIGHT: Visualizers -->
+<div class="news-cell visualizers-cell">
+  <div class="news-feature">
+    
+    <div class="visualizers-carousel-container">
+      <button class="visualizers-arrow prev" id="visualizersPrevBtn">
+        <i class="fas fa-chevron-left"></i>
+      </button>
+      
+      <div class="visualizers-carousel">
+        <div class="visualizers-carousel-track" id="visualizersTrack">
+          
+          <!-- Slide 1 -->
+          <div class="visualizer-card">
+            <a class="visualizer-link" href="https://www.youtube.com/watch?v=svcboYY81wU" target="_blank">
+              <div class="visualizer-image">
+                <img src="Assets/TheFateOfOphelia.jpg" alt="The Fate of Ophelia">
+                <div class="visualizer-overlay">
+                  <i class="fas fa-play-circle"></i>
+                </div>
+                <p class="visualizer-title">The Fate of Ophelia</p>
+              </div>
+            </a>
+          </div>
+          
+          <!-- Slide 2 -->
+          <div class="visualizer-card">
+            <a class="visualizer-link" href="https://www.youtube.com/watch?v=4Mg_Qtr6Osg" target="_blank">
+              <div class="visualizer-image">
+                <img src="Assets/ElisabethTaylor.jpg" alt="Elisabeth Taylor">
+                <div class="visualizer-overlay">
+                  <i class="fas fa-play-circle"></i>
+                </div>
+                <p class="visualizer-title">Elisabeth Taylor</p>
+              </div>
+            </a>
+          </div>
+          
+          <!-- Slide 3 -->
+          <div class="visualizer-card">
+            <a class="visualizer-link" href="https://www.youtube.com/watch?v=4FUIEcnvT04" target="_blank">
+              <div class="visualizer-image">
+                <img src="Assets/Opalite.jpg" alt="Opalite">
+                <div class="visualizer-overlay">
+                  <i class="fas fa-play-circle"></i>
+                </div>
+                <p class="visualizer-title">Opalite</p>
+              </div>
+            </a>
+          </div>
+          
+          <!-- Slide 4 -->
+          <div class="visualizer-card">
+            <a class="visualizer-link" href="https://www.youtube.com/watch?v=b3hW8c9mmLQ" target="_blank">
+              <div class="visualizer-image">
+                <img src="Assets/FatherFigure.jpg" alt="Father Figure">
+                <div class="visualizer-overlay">
+                  <i class="fas fa-play-circle"></i>
+                </div>
+                <p class="visualizer-title">Father Figure</p>
+              </div>
+            </a>
+          </div>
+          
+          <!-- Slide 5 -->
+          <div class="visualizer-card">
+            <a class="visualizer-link" href="https://www.youtube.com/watch?v=rc6NKSVv2fw" target="_blank">
+              <div class="visualizer-image">
+                <img src="Assets/EldestDaughter.jpg" alt="Eldest Daughter">
+                <div class="visualizer-overlay">
+                  <i class="fas fa-play-circle"></i>
+                </div>
+                <p class="visualizer-title">Eldest Daughter</p>
+              </div>
+            </a>
+          </div>
+          
+          <!-- Slide 6 -->
+          <div class="visualizer-card">
+            <a class="visualizer-link" href="https://www.youtube.com/watch?v=RId6LV1wtQY" target="_blank">
+              <div class="visualizer-image">
+                <img src="Assets/RuinTheFriendship.jpg" alt="Ruin the Friendship">
+                <div class="visualizer-overlay">
+                  <i class="fas fa-play-circle"></i>
+                </div>
+                <p class="visualizer-title">Ruin the Friendship</p>
+              </div>
+            </a>
+          </div>
+          
+          <!-- Slide 7 -->
+          <div class="visualizer-card">
+            <a class="visualizer-link" href="https://www.youtube.com/watch?v=ShsfUTynzQU" target="_blank">
+              <div class="visualizer-image">
+                <img src="Assets/ActuallyRomantic.jpg" alt="Actually Romantic">
+                <div class="visualizer-overlay">
+                  <i class="fas fa-play-circle"></i>
+                </div>
+                <p class="visualizer-title">Actually Romantic</p>
+              </div>
+            </a>
+          </div>
+          
+          <!-- Slide 8 -->
+          <div class="visualizer-card">
+            <a class="visualizer-link" href="https://www.youtube.com/watch?v=mC54kTYa9oI" target="_blank">
+              <div class="visualizer-image">
+                <img src="Assets/Wi$hLi$t.jpg" alt="Wi$h Li$t">
+                <div class="visualizer-overlay">
+                  <i class="fas fa-play-circle"></i>
+                </div>
+                <p class="visualizer-title">Wi$h Li$t</p>
+              </div>
+            </a>
+          </div>
+          
+          <!-- Slide 9 -->
+          <div class="visualizer-card">
+            <a class="visualizer-link" href="https://www.youtube.com/watch?v=erilCNjng-g" target="_blank">
+              <div class="visualizer-image">
+                <img src="Assets/Wood.jpg" alt="Wood">
+                <div class="visualizer-overlay">
+                  <i class="fas fa-play-circle"></i>
+                </div>
+                <p class="visualizer-title">Wood</p>
+              </div>
+            </a>
+          </div>
+          
+          <!-- Slide 10 -->
+          <div class="visualizer-card">
+            <a class="visualizer-link" href="https://www.youtube.com/watch?v=Ij6SgmK8KGQ" target="_blank">
+              <div class="visualizer-image">
+                <img src="Assets/CANCELLED!.jpg" alt="CANCELLED!">
+                <div class="visualizer-overlay">
+                  <i class="fas fa-play-circle"></i>
+                </div>
+                <p class="visualizer-title">CANCELLED!</p>
+              </div>
+            </a>
+          </div>
+          
+          <!-- Slide 11 -->
+          <div class="visualizer-card">
+            <a class="visualizer-link" href="https://www.youtube.com/watch?v=9Sx8MWI8qTU" target="_blank">
+              <div class="visualizer-image">
+                <img src="Assets/Honey.jpg" alt="Honey">
+                <div class="visualizer-overlay">
+                  <i class="fas fa-play-circle"></i>
+                </div>
+                <p class="visualizer-title">Honey</p>
+              </div>
+              
+            </a>
+          </div>
+          
+          <!-- Slide 12 -->
+          <div class="visualizer-card">
+            <a class="visualizer-link" href="https://www.youtube.com/watch?v=slUhVTAznMo" target="_blank">
+              <div class="visualizer-image">
+                <img src="Assets/TheLifeOfAShowgirl.jpg" alt="The Life of a Showgirl">
+                <div class="visualizer-overlay">
+                  <i class="fas fa-play-circle"></i>
+                </div>
+                <p class="visualizer-title">The Life of a Showgirl</p>
+              </div>
+            </a>
+          </div>
+          
+        </div>
+      </div>
+      
+      <button class="visualizers-arrow next" id="visualizersNextBtn">
+        <i class="fas fa-chevron-right"></i>
+      </button>
+    </div>
+    
+    <!-- Carousel Dots -->
+    <div class="visualizers-dots" id="visualizersDots"></div>
+
+    <a href="https://youtube.com/playlist?list=PLUA4gtE_LkWdk3070XZ8pnoVrHAzF9q9e&si=nuCGS80qV7OLoAlK" 
+       target="_blank" 
+       rel="noopener noreferrer" 
+       class="cta-button">
+      Watch the Visualizers
+    </a>
+
+    <h3 class="carousel-title">New album "The Life of a Showgirl"</h3>
+    <p class="news-feature-text">
+      Taylor Swift's new album is out now!  
+      Explore the full collection of official visualizers and dive into the sound
+      and storytelling of this new era.
+    </p>
+
+  </div>
+</div>
+
+<!-- BOTTOM LEFT: Wedding -->
+<div class="news-cell wedding-cell">
+  <div class="news-feature news-feature-secondary">
+
+    <div class="wedding-carousel-container">
+      <button class="wedding-arrow prev" id="weddingPrevBtn">
+        <i class="fas fa-chevron-left"></i>
+      </button>
+      
+      <div class="wedding-carousel">
+        <div class="wedding-carousel-track" id="weddingTrack">
+          <div class="wedding-slide"><div class="feature-media"><img src="Assets/TaylorSwift_Wedding1.png"></div></div>
+          <div class="wedding-slide"><div class="feature-media"><img src="Assets/TaylorSwift_Wedding2.png"></div></div>
+          <div class="wedding-slide"><div class="feature-media"><img src="Assets/TaylorSwift_Wedding3.png"></div></div>
+          <div class="wedding-slide"><div class="feature-media"><img src="Assets/TaylorSwift_Wedding4.png"></div></div>
+          <div class="wedding-slide"><div class="feature-media"><img src="Assets/TaylorSwift_Wedding5.png"></div></div>
+        </div>
+      </div>
+      
+      <button class="wedding-arrow next" id="weddingNextBtn">
+        <i class="fas fa-chevron-right"></i>
+      </button>
+    </div>
+
+    <div class="wedding-dots" id="weddingDots"></div>
+
+    <h3 class="carousel-title">Taylor Swift and Travis Kelce announce engagement</h3>
+    <p class="news-feature-text">
+      Last August, Travis Kelce proposed to Taylor Swift after they wrapped an episode of his <em>New Heights</em> podcast. The couple kept the engagement secret for two weeks before sharing the news publicly, turning it into one of the most talked-about events of the year.
+    </p>
+
+  </div>
+</div>
+
+<!-- BOTTOM RIGHT: Masters -->
+<div class="news-cell masters-cell">
+  <div class="news-feature news-feature-secondary">
+
+    <div class="masters-carousel-container">
+      <button class="masters-arrow prev" id="mastersPrevBtn">
+        <i class="fas fa-chevron-left"></i>
+      </button>
+      
+      <div class="masters-carousel">
+        <div class="masters-carousel-track" id="mastersTrack">
+          <div class="masters-slide"><div class="feature-media"><img src="Assets/TaylorSwift_Masters.png"></div></div>
+          <div class="masters-slide"><div class="feature-media"><img src="Assets/TaylorSwift_Letter.png"></div></div>
+        </div>
+      </div>
+      
+      <button class="masters-arrow next" id="mastersNextBtn">
+        <i class="fas fa-chevron-right"></i>
+      </button>
+    </div>
+
+    <div class="masters-dots" id="mastersDots"></div>
+
+    <h3 class="carousel-title">Taylor Swift buys back her master recordings</h3>
+    <p class="news-feature-text">
+      Last May, Taylor marked a turning point in her career : she has finally regained control of her recorded music
+      catalog six years after her former label, Big Machine Label Group, sold it to Scooter Braun's Ithaca Holdings
+      without her permission. A long-awaited victory, and a moment that brings her early work back where it belongs. Find out more on <a href="https://www.taylorswift.com/read-my-letter/" target="_blank" rel="noopener noreferrer">Taylor's open letter</a>
+    </p>
+  </div>
+</div>
+</div>
+</section>
+
+<script>
+// Visualizers Carousel - 1 Card Layout with Loop
+const visualizersTrack = document.getElementById('visualizersTrack');
+const visualizersPrevBtn = document.getElementById('visualizersPrevBtn');
+const visualizersNextBtn = document.getElementById('visualizersNextBtn');
+const visualizersDotsContainer = document.getElementById('visualizersDots');
+const visualizerCards = document.querySelectorAll('.visualizer-card');
+
+let visualizersCurrentIndex = 0;
+const visualizersTotalSlides = visualizerCards.length;
+
+// Create dots
+function createVisualizersDots() {
+  visualizersDotsContainer.innerHTML = '';
+  
+  for (let i = 0; i < visualizersTotalSlides; i++) {
+    const dot = document.createElement('button');
+    dot.classList.add('visualizer-dot');
+    if (i === 0) dot.classList.add('active');
+    dot.addEventListener('click', () => goToVisualizersSlide(i));
+    visualizersDotsContainer.appendChild(dot);
+  }
+}
+
+// Update carousel position
+function updateVisualizersCarousel() {
+  const cardWidth = visualizerCards[0].offsetWidth;
+  const moveAmount = visualizersCurrentIndex * cardWidth;
+  visualizersTrack.style.transform = `translateX(-${moveAmount}px)`;
+  
+  // Update dots
+  const dots = document.querySelectorAll('.visualizer-dot');
+  dots.forEach((dot, index) => {
+    dot.classList.toggle('active', index === visualizersCurrentIndex);
+  });
+  
+  // Arrows are always enabled for looping
+  visualizersPrevBtn.disabled = false;
+  visualizersNextBtn.disabled = false;
+}
+
+// Go to specific slide
+function goToVisualizersSlide(index) {
+  visualizersCurrentIndex = index;
+  updateVisualizersCarousel();
+}
+
+// Next button - Loop to beginning
+visualizersNextBtn.addEventListener('click', () => {
+  if (visualizersCurrentIndex < visualizersTotalSlides - 1) {
+    visualizersCurrentIndex++;
+  } else {
+    visualizersCurrentIndex = 0; // Loop back to start
+  }
+  updateVisualizersCarousel();
+});
+
+// Previous button - Loop to end
+visualizersPrevBtn.addEventListener('click', () => {
+  if (visualizersCurrentIndex > 0) {
+    visualizersCurrentIndex--;
+  } else {
+    visualizersCurrentIndex = visualizersTotalSlides - 1; // Loop to last slide
+  }
+  updateVisualizersCarousel();
+});
+
+// Initialize
+createVisualizersDots();
+updateVisualizersCarousel();
+</script>
+
+<script>
+// Wedding Carousel - Manual Navigation with Loop
+const weddingTrack = document.getElementById('weddingTrack');
+const weddingPrevBtn = document.getElementById('weddingPrevBtn');
+const weddingNextBtn = document.getElementById('weddingNextBtn');
+const weddingDotsContainer = document.getElementById('weddingDots');
+const weddingSlides = document.querySelectorAll('.wedding-slide');
+
+let weddingCurrentIndex = 0;
+const weddingTotalSlides = weddingSlides.length;
+
+// Create dots
+function createWeddingDots() {
+  weddingDotsContainer.innerHTML = '';
+  
+  for (let i = 0; i < weddingTotalSlides; i++) {
+    const dot = document.createElement('button');
+    dot.classList.add('wedding-dot');
+    if (i === 0) dot.classList.add('active');
+    dot.addEventListener('click', () => goToWeddingSlide(i));
+    weddingDotsContainer.appendChild(dot);
+  }
+}
+
+// Update carousel position
+function updateWeddingCarousel() {
+  const slideWidth = weddingSlides[0].offsetWidth;
+  const moveAmount = weddingCurrentIndex * slideWidth;
+  weddingTrack.style.transform = `translateX(-${moveAmount}px)`;
+  
+  // Update dots
+  const dots = document.querySelectorAll('.wedding-dot');
+  dots.forEach((dot, index) => {
+    dot.classList.toggle('active', index === weddingCurrentIndex);
+  });
+}
+
+// Go to specific slide
+function goToWeddingSlide(index) {
+  weddingCurrentIndex = index;
+  updateWeddingCarousel();
+}
+
+// Next button - Loop to beginning
+weddingNextBtn.addEventListener('click', () => {
+  if (weddingCurrentIndex < weddingTotalSlides - 1) {
+    weddingCurrentIndex++;
+  } else {
+    weddingCurrentIndex = 0;
+  }
+  updateWeddingCarousel();
+});
+
+// Previous button - Loop to end
+weddingPrevBtn.addEventListener('click', () => {
+  if (weddingCurrentIndex > 0) {
+    weddingCurrentIndex--;
+  } else {
+    weddingCurrentIndex = weddingTotalSlides - 1;
+  }
+  updateWeddingCarousel();
+});
+
+// Initialize
+createWeddingDots();
+updateWeddingCarousel();
+</script>
+
+<script>
+// Masters Carousel - Manual Navigation with Loop
+const mastersTrack = document.getElementById('mastersTrack');
+const mastersPrevBtn = document.getElementById('mastersPrevBtn');
+const mastersNextBtn = document.getElementById('mastersNextBtn');
+const mastersDotsContainer = document.getElementById('mastersDots');
+const mastersSlides = document.querySelectorAll('.masters-slide');
+
+let mastersCurrentIndex = 0;
+const mastersTotalSlides = mastersSlides.length;
+
+// Create dots
+function createMastersDots() {
+  mastersDotsContainer.innerHTML = '';
+  
+  for (let i = 0; i < mastersTotalSlides; i++) {
+    const dot = document.createElement('button');
+    dot.classList.add('masters-dot');
+    if (i === 0) dot.classList.add('active');
+    dot.addEventListener('click', () => goToMastersSlide(i));
+    mastersDotsContainer.appendChild(dot);
+  }
+}
+
+// Update carousel position
+function updateMastersCarousel() {
+  const slideWidth = mastersSlides[0].offsetWidth;
+  const moveAmount = mastersCurrentIndex * slideWidth;
+  mastersTrack.style.transform = `translateX(-${moveAmount}px)`;
+  
+  // Update dots
+  const dots = document.querySelectorAll('.masters-dot');
+  dots.forEach((dot, index) => {
+    dot.classList.toggle('active', index === mastersCurrentIndex);
+  });
+}
+
+// Go to specific slide
+function goToMastersSlide(index) {
+  mastersCurrentIndex = index;
+  updateMastersCarousel();
+}
+
+// Next button - Loop to beginning
+mastersNextBtn.addEventListener('click', () => {
+  if (mastersCurrentIndex < mastersTotalSlides - 1) {
+    mastersCurrentIndex++;
+  } else {
+    mastersCurrentIndex = 0;
+  }
+  updateMastersCarousel();
+});
+
+// Previous button - Loop to end
+mastersPrevBtn.addEventListener('click', () => {
+  if (mastersCurrentIndex > 0) {
+    mastersCurrentIndex--;
+  } else {
+    mastersCurrentIndex = mastersTotalSlides - 1;
+  }
+  updateMastersCarousel();
+});
+
+// Initialize
+createMastersDots();
+updateMastersCarousel();
+</script>
+
+<section class="store_section" id="merch">
+  <h2 class="store-heading">STORE</h2>
+  <div class="store-divider"></div>
+  <p class ="store_section p">From <em>Debut</em> to <em>The Life of a Showgirl</em>, every era tells its own story.<br>Shop exclusive merchandise from each era of Taylor's music below. </p>
+
+  <a href="https://store.taylorswift.com/collections/shop-all-albums" target="_blank" class="shop-all-button">Shop All Eras</a>
+
+  
+  <div class="eras-carousel-container">
+    <button class="carousel-arrow prev" id="prevBtn">
+      <i class="fas fa-chevron-left"></i>
+    </button>
+    
+    <div class="eras-carousel">
+      <div class="eras-carousel-track" id="carouselTrack">
+        
+        <!-- Taylor Swift -->
+        <div class="era-card">
+          <div class="era-card-image">
+            <img src="Assets/shop_taylorswift.png" alt="Taylor Swift Era">
+            <div class="era-card-overlay"></div>
+          </div>
+          <div class="era-card-content">
+            <h3 class="era-card-title">TAYLOR SWIFT</h3>
+            <p class="era-card-year">2006</p>
+            <a href="https://store.taylorswift.com/collections/taylor-swift-album-shop" target="_blank" class="era-card-button">Shop Era</a>
+          </div>
+        </div>
+        
+        <!-- Fearless -->
+        <div class="era-card">
+          <div class="era-card-image">
+            <img src="Assets/shop_fearless.png" alt="Fearless Era">
+            <div class="era-card-overlay"></div>
+          </div>
+          <div class="era-card-content">
+            <h3 class="era-card-title">FEARLESS TV</h3>
+            <p class="era-card-year">2008</p>
+            <a href="https://store.taylorswift.com/collections/fearless-taylors-version-shop" target="_blank" class="era-card-button">Shop Era</a>
+          </div>
+        </div>
+        
+        <!-- Speak Now -->
+        <div class="era-card">
+          <div class="era-card-image">
+            <img src="Assets/shop_speaknow.png" alt="Speak Now Era">
+            <div class="era-card-overlay"></div>
+          </div>
+          <div class="era-card-content">
+            <h3 class="era-card-title">SPEAK NOW TV</h3>
+            <p class="era-card-year">2010</p>
+            <a href="https://store.taylorswift.com/collections/speak-now-taylors-version-shop" target="_blank" class="era-card-button">Shop Era</a>
+          </div>
+        </div>
+        
+        <!-- Red -->
+        <div class="era-card">
+          <div class="era-card-image">
+            <img src="Assets/shop_red.png" alt="Red Era">
+            <div class="era-card-overlay"></div>
+          </div>
+          <div class="era-card-content">
+            <h3 class="era-card-title">RED TV</h3>
+            <p class="era-card-year">2012</p>
+            <a href="https://store.taylorswift.com/collections/red-taylors-version-shop" target="_blank" class="era-card-button">Shop Era</a>
+          </div>
+        </div>
+        
+        <!-- 1989 -->
+        <div class="era-card">
+          <div class="era-card-image">
+            <img src="Assets/shop_1989.png" alt="1989 Era">
+            <div class="era-card-overlay"></div>
+          </div>
+          <div class="era-card-content">
+            <h3 class="era-card-title">1989 TV</h3>
+            <p class="era-card-year">2014</p>
+            <a href="https://store.taylorswift.com/collections/1989-taylors-version-shop" target="_blank" class="era-card-button">Shop Era</a>
+          </div>
+        </div>
+        
+        <!-- Reputation -->
+        <div class="era-card">
+          <div class="era-card-image">
+            <img src="Assets/shop_reputation.png" alt="Reputation Era">
+            <div class="era-card-overlay"></div>
+          </div>
+          <div class="era-card-content">
+            <h3 class="era-card-title">REPUTATION</h3>
+            <p class="era-card-year">2017</p>
+            <a href="https://store.taylorswift.com/collections/reputation-shop" target="_blank" class="era-card-button">Shop Era</a>
+          </div>
+        </div>
+        
+        <!-- Lover -->
+        <div class="era-card">
+          <div class="era-card-image">
+            <img src="Assets/shop_lover.png" alt="Lover Era">
+            <div class="era-card-overlay"></div>
+          </div>
+          <div class="era-card-content">
+            <h3 class="era-card-title">LOVER</h3>
+            <p class="era-card-year">2019</p>
+            <a href="https://store.taylorswift.com/collections/lover-album-shop" target="_blank" class="era-card-button">Shop Era</a>
+          </div>
+        </div>
+        
+        <!-- Folklore -->
+        <div class="era-card">
+          <div class="era-card-image">
+            <img src="Assets/shop_folklore.png" alt="Folklore Era">
+            <div class="era-card-overlay"></div>
+          </div>
+          <div class="era-card-content">
+            <h3 class="era-card-title">FOLKLORE</h3>
+            <p class="era-card-year">2020</p>
+            <a href="https://store.taylorswift.com/collections/folklore-album-shop" target="_blank" class="era-card-button">Shop Era</a>
+          </div>
+        </div>
+        
+        <!-- Evermore -->
+        <div class="era-card">
+          <div class="era-card-image">
+            <img src="Assets/shop_evermore.png" alt="Evermore Era">
+            <div class="era-card-overlay"></div>
+          </div>
+          <div class="era-card-content">
+            <h3 class="era-card-title">EVERMORE</h3>
+            <p class="era-card-year">2020</p>
+            <a href="https://store.taylorswift.com/collections/taylor-swift-evermore-album-shop" target="_blank" class="era-card-button">Shop Era</a>
+          </div>
+        </div>
+        
+        <!-- Midnights -->
+        <div class="era-card">
+          <div class="era-card-image">
+            <img src="Assets/shop_midnights.png" alt="Midnights Era">
+            <div class="era-card-overlay"></div>
+          </div>
+          <div class="era-card-content">
+            <h3 class="era-card-title">MIDNIGHTS</h3>
+            <p class="era-card-year">2022</p>
+            <a href="https://store.taylorswift.com/collections/taylor-swift-midnights-album-shop" target="_blank" class="era-card-button">Shop Era</a>
+          </div>
+        </div>
+        
+        <!-- The Tortured Poets Department -->
+        <div class="era-card">
+          <div class="era-card-image">
+            <img src="Assets/shop_ttpd.png" alt="TTPD Era">
+            <div class="era-card-overlay"></div>
+          </div>
+          <div class="era-card-content">
+            <h3 class="era-card-title">THE TORTURED POETS DEPARTMENT</h3>
+            <p class="era-card-year">2024</p>
+            <a href="https://store.taylorswift.com/collections/the-tortured-poets-department-shop" target="_blank" class="era-card-button">Shop Era</a>
+          </div>
+        </div>
+        
+        <!-- The Life of a Showgirl -->
+        <div class="era-card">
+          <div class="era-card-image">
+            <img src="Assets/shop_tloas.png" alt="Coming Soon">
+            <div class="era-card-overlay"></div>
+          </div>
+          <div class="era-card-content">
+            <h3 class="era-card-title">THE LIFE OF A SHOWGIRL</h3>
+            <p class="era-card-year">2025</p>
+            <a href="https://store.taylorswift.com/collections/the-life-of-a-showgirl-shop" class="era-card-button">Shop Era</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    
+    <button class="carousel-arrow next" id="nextBtn">
+      <i class="fas fa-chevron-right"></i>
+    </button>
+  </div>
+  
+  <!-- Carousel Dots -->
+  <div class="carousel-dots" id="carouselDots"></div>
+</section>
+
+<script>
+// Store Eras Carousel with Looping
+const storeTrack = document.getElementById('carouselTrack');
+const storePrevBtn = document.getElementById('prevBtn');
+const storeNextBtn = document.getElementById('nextBtn');
+const storeDotsContainer = document.getElementById('carouselDots');
+const storeCards = document.querySelectorAll('.era-card');
+
+let storeCurrentIndex = 0;
+let storeCardsPerView = 3;
+
+function updateStoreCardsPerView() {
+  if (window.innerWidth <= 600) {
+    storeCardsPerView = 1;
+  } else if (window.innerWidth <= 900) {
+    storeCardsPerView = 2;
+  } else {
+    storeCardsPerView = 3;
+  }
+}
+
+function getStoreTotalPages() {
+  return Math.ceil(storeCards.length / storeCardsPerView);
+}
+
+function createStoreDots() {
+  storeDotsContainer.innerHTML = '';
+  const totalPages = getStoreTotalPages();
+  
+  for (let i = 0; i < totalPages; i++) {
+    const dot = document.createElement('button');
+    dot.classList.add('carousel-dot');
+    if (i === 0) dot.classList.add('active');
+    dot.addEventListener('click', () => goToStorePage(i));
+    storeDotsContainer.appendChild(dot);
+  }
+}
+
+function updateStoreCarousel() {
+  const cardWidth = storeCards[0].offsetWidth;
+  const gap = 20;
+  const moveAmount = storeCurrentIndex * (cardWidth + gap) * storeCardsPerView;
+  storeTrack.style.transform = `translateX(-${moveAmount}px)`;
+  
+  const dots = document.querySelectorAll('.carousel-dot');
+  dots.forEach((dot, index) => {
+    dot.classList.toggle('active', index === storeCurrentIndex);
+  });
+  
+  // Arrows are always enabled for looping
+  storePrevBtn.disabled = false;
+  storeNextBtn.disabled = false;
+}
+
+function goToStorePage(pageIndex) {
+  storeCurrentIndex = pageIndex;
+  updateStoreCarousel();
+}
+
+// Next button - Loop to beginning
+storeNextBtn.addEventListener('click', () => {
+  if (storeCurrentIndex < getStoreTotalPages() - 1) {
+    storeCurrentIndex++;
+  } else {
+    storeCurrentIndex = 0; // Loop back to start
+  }
+  updateStoreCarousel();
+});
+
+// Previous button - Loop to end
+storePrevBtn.addEventListener('click', () => {
+  if (storeCurrentIndex > 0) {
+    storeCurrentIndex--;
+  } else {
+    storeCurrentIndex = getStoreTotalPages() - 1; // Loop to last page
+  }
+  updateStoreCarousel();
+});
+
+window.addEventListener('resize', () => {
+  updateStoreCardsPerView();
+  createStoreDots();
+  storeCurrentIndex = 0;
+  updateStoreCarousel();
+});
+
+updateStoreCardsPerView();
+createStoreDots();
+updateStoreCarousel();
+</script>
+
+<footer class="footer_taylor">
+  <div class="social-icons-container">
+    <a href="https://www.facebook.com/taylorswift" target="_blank" class="social-icon">
+      <i class="fa-brands fa-facebook-f"></i>
+    </a>
+    <a href="https://www.instagram.com/taylorswift/" target="_blank" class="social-icon">
+      <i class="fa-brands fa-instagram"></i>
+    </a>
+    <a href="https://www.tumblr.com/taylorswift" target="_blank" class="social-icon">
+      <i class="fa-brands fa-tumblr"></i>
+    </a>
+    <a href="https://x.com/taylorswift13" target="_blank" class="social-icon">
+      <i class="fa-brands fa-x-twitter"></i>
+    </a>
+    <a href="https://www.tiktok.com/@taylorswift" target="_blank" class="social-icon">
+      <i class="fa-brands fa-tiktok"></i>
+    </a>
+    <a href="https://www.youtube.com/channel/UCqECaJ8Gagnn7YCbPEzWH6g" target="_blank" class="social-icon">
+      <i class="fa-brands fa-youtube"></i>
+    </a>
+    <a href="https://www.snapchat.com/@taylorswift" target="_blank" class="social-icon">
+      <i class="fa-brands fa-snapchat"></i>
+    </a>
+  </div>
+
+  <div class="footer-links">
+    <a href="https://www.taylorswift.com/terms/">Terms</a>
+    <a href="https://www.taylorswift.com/privacy/">Privacy</a>
+    <a href="https://www.taylorswift.com/accessibility/">Accessibility</a>
+    <a href="https://www.taylorswift.com/https://privacy.umusic.com/uk/">Cookie Choices</a>
+  </div>
+  
+  <p class="text-footer">
+    <a href="https://www.linkedin.com/in/laura-zumella/?locale=en_US" target="_blank">Powered by Laura ZUMELLA</a>
+  </p>
+</footer>
+</body>
+</html>
