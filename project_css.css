@@ -2999,20 +2999,21 @@ div.taylor-swift-albums div.desc {
   }
 
   div.gallery {
+    grid-template-columns: repeat(2, 1fr);
     padding: 0 12px 50px 12px;
-    gap: 18px;
+    gap: 15px;
   }
 
   div.taylor-swift-albums div.desc {
-    font-size: 17px;
-    padding: 12px;
-    min-height: 55px;
+    font-size: 14px;
+    padding: 10px 8px;
+    min-height: 50px;
   }
 
   .era-button {
-    margin: 12px 12px 12px 12px;
-    padding: 10px 16px;
-    font-size: 10px;
+    margin: 10px 8px 10px 8px;
+    padding: 8px 12px;
+    font-size: 9px;
   }
   
   /* Wiki page mobile */
