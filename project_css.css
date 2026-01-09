@@ -2627,20 +2627,27 @@ div.taylor-swift-albums div.desc {
   }
 }
 
-/* Mobile Portrait */
+/* Mobile Portrait - Comprehensive Updates */
 @media screen and (max-width: 600px) {
+  body {
+    padding-top: 120px !important;
+  }
+
   .main-header {
     height: 60px;
   }
   
   .main-header-logo {
-    height: 45px;
+    height: 40px;
+  }
+
+  .Homepage {
+    top: 60px;
   }
   
   .Homepage .menu ul {
     flex-wrap: wrap;
     justify-content: space-evenly;
-    background: linear-gradient(135deg, #2c2c2c 0%, #1a1a1a 100%);
   }
   
   ul li {
@@ -2648,45 +2655,89 @@ div.taylor-swift-albums div.desc {
   }
   
   ul li a {
-    padding: 14px 16px;
-    font-size: 12px;
-    letter-spacing: 0.5px;
+    padding: 12px 8px;
+    font-size: 11px;
+    letter-spacing: 0.3px;
+  }
+
+  .dropdown-toggle::after {
+    font-size: 8px;
+    margin-left: 4px;
+  }
+
+  .dropdown-menu {
+    position: static;
+    width: 100%;
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+    display: none;
+  }
+
+  .dropdown.active .dropdown-menu {
+    display: block;
   }
   
+  .footer_taylor {
+    padding: 40px 15px 25px 15px;
+  }
+
   .footer-links {
-    display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 12px;
   }
   
   .footer-links a {
     margin: 0;
+    font-size: 11px;
   }
   
   .footer_taylor .social-icons-container {
-    gap: 15px;
+    gap: 10px;
+  }
+
+  .footer_taylor .social-icon {
+    width: 38px;
+    height: 38px;
+  }
+
+  .footer_taylor .social-icon i {
+    font-size: 16px;
+  }
+
+  .text-footer {
+    font-size: 11px;
   }
   
+  /* Form page mobile */
   .form-section {
-    padding: 30px 20px;
+    padding: 15px 10px;
+    margin: 15px auto 40px auto;
   }
   
   .responsive-form {
-    padding: 30px 20px;
-    border-radius: 16px;
+    padding: 20px 12px;
   }
   
-  h2.sign_up {
-    font-size: 35px;
+  .form-section h1,
+  h1.sign_up {
+    font-size: 45px;
+    margin-bottom: 10px;
   }
   
   .form-section p,
   p.p_sign_up {
-    font-size: 15px;
+    font-size: 13px;
+    line-height: 1.5;
+  }
+
+  p.giveaway-highlight {
+    font-size: 13px;
+    margin-bottom: 25px;
   }
   
   label {
-    font-size: 13px;
+    font-size: 12px;
   }
   
   input[type=text],
@@ -2695,45 +2746,189 @@ div.taylor-swift-albums div.desc {
   select,
   textarea,
   .form-select {
-    padding: 12px 14px;
+    padding: 10px;
+    font-size: 13px;
+  }
+
+  .checkbox_policy {
+    padding: 12px;
+    margin: 15px 0 0 0;
+  }
+
+  .checkbox_policy label {
+    font-size: 12px;
+  }
+
+  .checkbox {
+    font-size: 11px;
+    margin-top: 8px;
+  }
+
+  .animated_button {
+    padding: 14px;
     font-size: 14px;
+    margin: 15px 0 5px 0;
   }
   
+  /* Homepage mobile */
   h1.homepage_title {
-    font-size: 40px;
-    margin: 30px 0 15px 0;
+    font-size: 32px;
+    margin: 15px 0 10px 0;
   }
   
   .news-heading,
   .store-heading {
-    font-size: 35px;
-  }
-  
-  .news-heading::before,
-  .news-heading::after,
-  .store-heading::before,
-  .store-heading::after {
-    display: none;
+    font-size: 28px;
+    padding: 0 1rem;
   }
   
   p.homepage_paragraph,
   p.news_paragraph {
-    font-size: 16px;
-    padding: 0 20px;
+    font-size: 14px;
+    padding: 0 12px;
+    line-height: 1.5;
+  }
+
+  .news-divider,
+  .store-divider {
+    margin: 0 auto 20px auto;
+  }
+
+  /* Album section mobile */
+  .album-feature-section {
+    padding: 15px 10px;
+  }
+
+  .album-feature-container {
+    padding: 20px 12px;
+    border-radius: 16px;
+  }
+
+  .album-section-title {
+    font-size: 32px;
+  }
+
+  .album-badge {
+    font-size: 9px;
+    padding: 6px 12px;
+    margin-bottom: 12px;
+  }
+
+  .album-section-subtitle {
+    font-size: 13px;
+  }
+
+  .album-spotify-embed {
+    margin: 20px 0;
+  }
+
+  .album-actions {
+    grid-template-columns: 1fr;
+    gap: 8px;
+    margin-top: 20px;
+  }
+
+  .album-action-btn {
+    padding: 12px 10px;
+    font-size: 11px;
+    gap: 6px;
+  }
+
+  .album-action-btn i {
+    font-size: 18px;
   }
   
+  /* News section mobile */
+  .news_homepage_title {
+    margin: 40px 0;
+  }
+
+  .news_homepage_title .news-grid {
+    gap: 20px;
+    padding: 0 12px;
+  }
+
   .news-feature-media,
-  .slideshow-feature,
-  .slideshow-feature-5 {
+  .visualizers-carousel-container,
+  .wedding-carousel-container,
+  .masters-carousel-container {
     height: 220px;
+  }
+
+  .disney-cell,
+  .visualizers-cell,
+  .wedding-cell,
+  .masters-cell {
+    min-height: auto;
   }
   
   .carousel-title {
-    font-size: 28px;
+    font-size: 22px;
+    padding: 0 8px;
+    margin: 15px 0 8px 0;
+  }
+
+  .news-feature-text,
+  .carousel-description p {
+    font-size: 13px;
+    padding: 0 12px 15px 12px;
+    line-height: 1.6;
+  }
+
+  .cta-button {
+    padding: 10px 20px;
+    font-size: 11px;
+    margin: 15px auto;
+  }
+
+  .visualizers-arrow,
+  .wedding-arrow,
+  .masters-arrow {
+    width: 32px;
+    height: 32px;
+    font-size: 12px;
+  }
+
+  .visualizers-dots,
+  .wedding-dots,
+  .masters-dots {
+    margin: 10px 0 8px 0;
+    gap: 6px;
+  }
+
+  .visualizer-dot,
+  .wedding-dot,
+  .masters-dot {
+    width: 8px;
+    height: 8px;
+  }
+
+  .visualizer-title {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+
+  /* Store section mobile */
+  .store_section {
+    margin: 50px auto;
+    padding: 30px 12px;
+  }
+
+  .store_section p {
+    font-size: 13px;
+    padding: 0 8px;
+    margin: 10px 0;
+  }
+
+  .shop-all-button {
+    padding: 12px 24px;
+    font-size: 13px;
+    margin: 8px auto 15px auto;
   }
 
   .eras-carousel-container {
-    padding: 0 50px;
+    padding: 0 35px;
+    margin: 30px auto;
   }
   
   .era-card {
@@ -2743,51 +2938,166 @@ div.taylor-swift-albums div.desc {
   .era-card-image {
     height: 200px;
   }
-  
-  .carousel-arrow {
-    width: 40px;
-    height: 40px;
-    font-size: 16px;
+
+  .era-card-content {
+    padding: 18px;
+  }
+
+  .era-card-title {
+    font-size: 26px;
+    margin: 0 0 8px 0;
+  }
+
+  .era-card-year {
+    font-size: 11px;
+    margin-bottom: 12px;
+  }
+
+  .era-card-button {
+    padding: 9px 18px;
+    font-size: 10px;
   }
   
+  .carousel-arrow {
+    width: 32px;
+    height: 32px;
+    font-size: 13px;
+  }
+
+  .carousel-dots {
+    margin-top: 18px;
+    gap: 7px;
+  }
+
+  .carousel-dot {
+    width: 9px;
+    height: 9px;
+  }
+
+  /* Eras slider mobile */
+  .eras-slider {
+    height: calc(100vh - 120px);
+  }
+
+  /* Gallery page mobile */
+  .the-eras h1 {
+    font-size: 32px;
+    margin-top: 15px;
+    margin-bottom: 8px;
+  }
+
+  .the-eras h2 {
+    font-size: 18px;
+    margin: 8px 0 15px 0;
+  }
+
+  .the-eras .gallery-paragraph {
+    font-size: 13px;
+    padding: 0 12px;
+    line-height: 1.5;
+    margin: 0 auto 35px auto;
+  }
+
+  div.gallery {
+    padding: 0 12px 50px 12px;
+    gap: 18px;
+  }
+
+  div.taylor-swift-albums div.desc {
+    font-size: 17px;
+    padding: 12px;
+    min-height: 55px;
+  }
+
+  .era-button {
+    margin: 12px 12px 12px 12px;
+    padding: 10px 16px;
+    font-size: 10px;
+  }
+  
+  /* Wiki page mobile */
+  .news-page .wiki {
+    padding: 0 12px;
+    margin: 30px auto;
+  }
+
+  .wiki-header,
+  .wiki-toc,
+  .wiki-section,
+  .wiki-infobox {
+    padding: 18px 12px;
+  }
+
   .wiki-title {
-    font-size: 55px;
+    font-size: 45px;
+    margin-bottom: 10px;
+  }
+
+  .wiki-subtitle {
+    font-size: 13px;
+    line-height: 1.5;
   }
   
   .wiki-toc-title {
-    font-size: 42px;
+    font-size: 34px;
+    margin-bottom: 12px;
+  }
+
+  .wiki-toc-list {
+    padding-left: 20px;
+  }
+
+  .wiki-toc-list li {
+    margin-bottom: 6px;
+    font-size: 13px;
   }
   
   .wiki-section h2 {
-    font-size: 38px;
+    font-size: 30px;
+    margin-bottom: 12px;
+  }
+
+  .wiki-section p {
+    font-size: 13px;
+    line-height: 1.6;
+    margin-bottom: 12px;
+  }
+
+  .wiki-table-wrap {
+    margin-top: 12px;
+  }
+
+  .wiki-table {
+    min-width: 600px;
+  }
+
+  .wiki-table th,
+  .wiki-table td {
+    padding: 10px 8px;
+    font-size: 11px;
+  }
+
+  .wiki-table .award-pic img {
+    width: 90px;
+    height: 90px;
   }
   
   .infobox-title {
-    font-size: 40px;
+    font-size: 32px;
+    margin-bottom: 12px;
   }
-}
 
-/* Extra Small Mobile */
-@media screen and (max-width: 480px) {
-  ul li {
-    flex: 0 0 100%;
+  .infobox-table {
+    font-size: 11px;
   }
-  
-  ul li a {
-    padding: 12px 16px;
+
+  .infobox-table th,
+  .infobox-table td {
+    padding: 8px 6px;
   }
-  
-  div.gallery {
-    grid-template-columns: 1fr;
-    gap: 25px;
-  }
-  
-  div.taylor-swift-albums {
-    width: calc(100% - 20px);
-  }
-  
-  .the-eras h1 {
-    font-size: 40px;
+
+  .wiki-infobox .infobox-image img {
+    max-width: 80%;
   }
 }
 
