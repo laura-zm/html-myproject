@@ -2601,8 +2601,8 @@ div.taylor-swift-albums div.desc {
   
   div.gallery {
     grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    padding: 0 20px 60px 20px;
+    gap: 15px;
+    padding: 0 15px 60px 15px;
   }
   
   .the-eras h1 {
@@ -2617,12 +2617,9 @@ div.taylor-swift-albums div.desc {
     font-size: 16px;
   }
   
-  div.taylor-swift-albums {
-    width: calc(50% - 20px);
-  }
   
   div.taylor-swift-albums div.desc {
-    font-size: 20px;
+    font-size: 18px;
     min-height: 80px;
   }
 }
